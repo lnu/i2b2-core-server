@@ -141,7 +141,7 @@
 	<!-- =================================================================== -->
 	<!-- 								JBOSS DEPLOY 						 -->
 	<!-- =================================================================== -->
-	<target name="deploy"  description="Deployment step:copy distribution jar files to app server"  depends="dist">
+	<target name="deploy"  description="Deployment step:copy distribution jar files to app server"  >
 			<echo message="${Name}: Copying archive package to app server ${jboss.home}" />
 		<copy todir="${jboss.home}/standalone/deployments/${axis2.war.name}/WEB-INF/lib">
 			<fileset dir="${dist}">
